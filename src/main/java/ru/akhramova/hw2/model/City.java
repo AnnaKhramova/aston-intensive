@@ -38,11 +38,11 @@ public class City extends Entity {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         City city = (City) o;
-        return Objects.equals(name, city.name) && Objects.equals(users, city.users);
+        return Objects.equals(name, city.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), name, users);
+        return Objects.hash(super.hashCode(), name);
     }
 }
